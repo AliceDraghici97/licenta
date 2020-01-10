@@ -1,0 +1,17 @@
+<div style="display:block">
+
+  <div class="card-body row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-2">
+      <button href="src/app/views/base/creare_comanda.component.html" id="btn" type="submit" (click)="onClick()"
+        class="btn btn-sm btn-primary pull-center"><i class="fa fa-dot-circle-o"></i>
+        GENERARE </button>
+    </div>
+    <div class="col-md-5"></div>
+  </div>
+
+  <canvas *ngIf="isData" id="charrt" baseChart [data]="pieChartData" [colors]="chartColors" [labels]="pieChartLabels"
+    [chartType]="pieChartType">
+  </canvas>
+</div>

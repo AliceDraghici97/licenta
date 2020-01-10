@@ -1,0 +1,63 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Definire Masina</strong>
+        </div>
+
+        <div class="card-body">
+          <form id="formm">
+            <div class="form-group">
+              <label for="company">Marca:</label>
+              <input type="text" class="form-control" id="marca" placeholder="Introduceti marca masinii!">
+            </div>
+
+            <div class="form-group">
+              <label for="company">Model:</label>
+              <input type="text" class="form-control" id="model" placeholder="Introduceti modelul masinii!">
+            </div>
+
+            <div class="form-group">
+              <label for="telAgent">Numar Kilometrii:</label>
+              <input type="tel" class="form-control" id="nrKm" placeholder="Introduceti numarul de kilometrii!">
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label">Tip Carburant</label>
+              <div class="col-md-9 col-form-label">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="option1" id="checkbox1">
+                  <label class="form-check-label" for="checkbox1">
+                    Benzina
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="option1" id="checkbox2">
+                  <label class="form-check-label" for="checkbox2">
+                    Motorina </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="option1" id="checkbox3">
+                  <label class="form-check-label" for="checkbox3">
+                    GPL </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" (click)="onClick()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+            Adaugati</button>
+          <button type="reset" (click)="clear()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i>
+            Reset</button>
+        </div>
+      </div>
+      <div class="col-sm-12">
+      </div>
+
+    </div>
+  </div>
+</div>

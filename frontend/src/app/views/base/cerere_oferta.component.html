@@ -1,0 +1,127 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Cerere Oferta Produs</strong>
+        </div>
+
+        <div class="card-body">
+          <form id="formm">
+            <div class="form-group">
+              <label>
+                <strong> Date Produs Dorit</strong>
+              </label>
+
+              <div class="form-group">
+                <label for="product">Produs:</label>
+                <input type="text" class="form-control" id="product" placeholder="Introduceti denumirea produsului!">
+              </div>
+
+              <div class="form-group">
+                <label for="cantitate">Cantitate:</label>
+                <input type="text" class="form-control" id="cantitate" placeholder="Introduceti cantitatea dorita!">
+              </div>
+
+              <div class="form-group">
+                <label for="um">Unitate de Masura</label>
+                <input type="text" class="form-control" id="um" placeholder="Introduceti unitatea de masura!">
+              </div>
+
+              <div class="form-group">
+                <label for="date-input">Data de Livrare Dorita</label>
+                <div class="col-md-6">
+                  <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label">Discount Dorit</label>
+                <div class="col-md-9 col-form-label">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radio0" value="option0">
+                    <label class="form-check-label" for="radio0">
+                      0% </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radio1" value="option1" checked>
+                    <label class="form-check-label" for="radio1">
+                      30%
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radio2" value="option2">
+                    <label class="form-check-label" for="radio2">
+                      50% </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radio3" value="option3">
+                    <label class="form-check-label" for="radio3">
+                      70% </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="select1">Metoda de Plata</label>
+                <div class="col-md-9">
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">Selectati!</option>
+                    <option value="1">Cash</option>
+                    <option value="2">Card</option>
+                    <option value="3">Ordin de Plata</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <strong> Date Furnizor</strong>
+                </label>
+
+                <div class="form-group">
+                  <label for="company">Furnizor:</label>
+                  <input type="text" class="form-control" id="company" placeholder="Introduceti numele furnizorului!">
+                </div>
+
+                <div class="form-group">
+                  <label for="vat">CUI</label>
+                  <input type="text" class="form-control" id="vat" placeholder="Introduceti cui-ul!">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <strong>Agent</strong>
+                </label>
+
+                <div class="form-group">
+                  <label for="numeAgent">Nume:</label>
+                  <input type="text" class="form-control" id="numeAgent" placeholder="Introduceti numele agentului!">
+                </div>
+
+                <div class="form-group">
+                  <label for="telAgent">Telefon:</label>
+                  <input type="tel" class="form-control" id="telAgent" placeholder="Introduceti telefonul agentului!">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button type="submit" (click)="onClick()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+          Salvati</button>
+        <button type="reset" (click)="clear()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+      </div>
+    </div>
+    <div class="col-sm-12">
+    </div>
+  </div>
+
+</div>

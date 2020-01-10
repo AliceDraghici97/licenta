@@ -1,0 +1,78 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Definire Angajat</strong>
+        </div>
+
+        <div class="card-body">
+          <form id="formm">
+
+            <div class="form-group">
+              <label for="company">Nume:</label>
+              <input type="text" class="form-control" id="nume" placeholder="Introduceti numele agentului!">
+            </div>
+
+            <div class="form-group">
+              <label for="company"> Prenume:</label>
+              <input type="text" class="form-control" id="prenume" placeholder="Introduceti prenumele agentului!">
+            </div>
+
+            <div class="form-group">
+              <label for="vat">CNP:</label>
+              <input type="numeric" class="form-control" id="cnp" placeholder="Introduceti cnp-ul!">
+            </div>
+
+            <div class="form-group">
+              <label for="street">Adresa:</label>
+              <input type="text" class="form-control" id="adresa" placeholder="Introduceti adresa!">
+            </div>
+
+            <div class="row">
+              <div class="form-group col-sm-6">
+                <label for="postal-code">Cod Postal:</label>
+                <input type="text" class="form-control" id="postal-code" placeholder="Introduceti codul postal!">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="country">Tara:</label>
+              <input type="text" class="form-control" id="country" placeholder="Introduceti tara!">
+            </div>
+
+            <div class="form-group">
+              <label for="bank">Functie:</label>
+              <input type="text" class="form-control" id="functie" placeholder="Introduceti functia!">
+            </div>
+
+            <div class="form-group">
+              <label for="telAgent">Telefon:</label>
+              <input type="tel" class="form-control" id="telAgent" placeholder="Introduceti telefonul agentului!">
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="email-input">Email:</label>
+              <div class="col-md-9">
+                <input type="email" id="email-input" name="email-input" class="form-control"
+                  placeholder="Introduceti emailul!" autocomplete="email">
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="card-footer">
+          <button type="submit" (click)="onClick()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+            Adaugati</button>
+          <button type="reset" (click)="clear()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i>
+            Resetati</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+    </div>
+  </div>
+</div>

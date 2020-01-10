@@ -1,0 +1,47 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <h2>
+        RAPORT PROGRES PRODUCTIE
+      </h2>
+    </div>
+    <div class="card-body">
+
+      <div> <span>Selectati un produs</span>
+        <select class="form-control" id="numeProdusSELECT">
+        </select>
+      </div>
+
+      <div class="card-body row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-2">
+          <button href="src/app/views/base/creare_comanda.component.html" id="preluare" type="submit"
+            (click)="preluare()" class="btn btn-sm btn-primary pull-center"><i class="fa fa-dot-circle-o"></i>
+            Preluare
+            produse </button>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
+      <div class="mb-4">
+        <progressbar [max]="max" [value]="dynamic">
+          <span class="text-nowrap">{{dynamic}} / {{max}}</span>
+        </progressbar>
+        <small><em>Cantitate produsa</em></small>
+      </div>
+
+      <div class="mb-4">
+        <progressbar [animate]="false" [value]="dynamic/10" type="success"><b>{{dynamic/10}}%</b></progressbar>
+        <small><em>Procent din productia totala</em></small>
+      </div>
+
+      <div class="mb-3">
+        <progressbar class="progress-striped active" [value]="dynamic/10" [type]="type">{{type}}</progressbar>
+        <small><em>Tip Productie</em></small>
+      </div>
+
+      <button type="button" class="btn btn-sm btn-primary" (click)="random()">Generare</button>
+    </div>
+  </div>
+</div>

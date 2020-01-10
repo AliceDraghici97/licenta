@@ -1,0 +1,74 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Nota Contabila</strong>
+        </div>
+
+        <div class="card-body">
+          <form id="formm">
+            <div class="form-group">
+
+              <div class="form-group" style="float:left;margin-right:20px;">
+                <label for="company">Explicatii: </label>
+                <textarea name="Text1" cols="40" rows="3" id="explicatii"
+                  placeholder="Introduceti explicatiile!"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="vat">Simbol Numeric Cont:</label>
+                <input type="number" class="form-control" id="vat" placeholder="exp: 2210">
+              </div>
+
+              <div class="form-group">
+                <label for="date-input">Data:</label>
+                <input class="form-control" id="datet" type="date" name="date-input" placeholder="date">
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="select1">Cont Contabil:</label>
+                <div>
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">Selectati!</option>
+                    <option value="1">Creditor</option>
+                    <option value="2">Debitor</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <strong>Agent</strong>
+                </label>
+
+                <div class="form-group">
+                  <label for="numeAgent">Nume:</label>
+                  <input type="text" class="form-control" id="numeAgent" placeholder="Introduceti numele agentului!">
+                </div>
+
+                <div class="form-group">
+                  <label for="telAgent">Telefon:</label>
+                  <input type="number" class="form-control" id="telAgent" min="1" max="9"
+                    onkeypress="return event.charCode>=48 && event.charCode <=57" step="2" ondrop="return false;"
+                    onpaste="return false;" placeholder="Introduceti telefonul agentului!" />
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="card-footer">
+        <button type="submit" (click)="onClick()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+          Adaugati</button>
+        <button type="reset" (click)="clear()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Resetati</button>
+      </div>
+      <div class="col-sm-12">
+      </div>
+    </div>
+  </div>
+</div>

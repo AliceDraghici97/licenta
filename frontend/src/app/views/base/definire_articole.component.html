@@ -1,0 +1,51 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>DEFINIRE PRODUS</strong>
+        </div>
+
+        <div class="card-body">
+          <form id="formm">
+
+            <div class="form-group">
+              <label for="company">Denumire:</label>
+              <input type="text" class="form-control" id="denumire" placeholder="Introduceti denumirea produsului!">
+            </div>
+
+            <div class="form-group">
+              <label for="street">Compozitie:</label>
+              <input type="text" class="form-control" id="compozitie" placeholder="Introduceti compozitia produsului!">
+            </div>
+
+            <div class="form-group">
+              <label for="telAgent">Pret:</label>
+              <input type="number" class="form-control" id="pret" placeholder="Introduceti pretul produsului!">
+            </div>
+            <div class="form-group">
+              <label for="telAgent">Cantitate in Stoc:</label>
+              <input type="number" class="form-control" id="cantitate"
+                placeholder="Introduceti cantitatea aflata in stoc!">
+            </div>
+            <div class="form-group">
+              <label for="telAgent">Unitatea de Masura:</label>
+              <input type="text" class="form-control" id="unit" placeholder="Introduceti unitatea de masura!">
+            </div>
+          </form>
+        </div>
+
+        <div class="card-footer">
+          <button type="submit" (click)="onClick()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+            Adaugati</button>
+          <button type="reset" (click)="clear()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i>
+            Resetati</button>
+        </div>
+      </div>
+      <div class="col-sm-12">
+      </div>
+    </div>
+  </div>
+</div>
